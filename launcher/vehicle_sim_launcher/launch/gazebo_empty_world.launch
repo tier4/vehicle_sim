@@ -32,7 +32,8 @@
 
     <node name="vehicle_input_subscriber" pkg="vehicle_sim_interface" type="vehicle_input_subscriber" respawn="false"
           output="screen">
-      <remap from="cmd_vel" to="/cmd_vel"/>
+      <remap from="steering_angle" to="/steering_angle"/>
+      <remap from="velocity" to="/velocity"/>
     </node>
     <node name="vehicle_info_publisher" pkg="vehicle_sim_interface" type="vehicle_info_publisher" respawn="false"
           output="screen">
